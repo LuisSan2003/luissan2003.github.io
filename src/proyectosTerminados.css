@@ -1,0 +1,102 @@
+/* Variable en CSS*/
+/*Variable en SASS*/
+:root {
+  --borde: solid 1px;
+}
+
+/*Funciones en SASS*/
+/* Dentro de una clase se pone
+    @include reset-pm();*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.container {
+  background-color: white;
+  margin: 100px auto;
+  width: 1280px;
+  padding: 50px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  background-size: 100% 100%;
+}
+.container ul {
+  list-style: none;
+}
+.container ul li {
+  padding-bottom: 12px;
+  text-align: justify;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  border-bottom: solid 2px rgba(169, 169, 180, 0.1);
+  margin: 12px;
+  position: relative;
+}
+
+.menu-item {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  line-height: 3rem;
+  transition: flex 0.5s;
+  position: relative;
+  transform-origin: center left;
+  border-left: solid 2px rgba(169, 169, 180, 0.1);
+  cursor: pointer;
+  background-color: white;
+}
+.menu-item ul {
+  display: none;
+  list-style: none;
+}
+.menu-item:hover {
+  flex: 1.25;
+  background-color: #0052be;
+}
+.menu-item:hover ul {
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s, display 1s;
+  box-shadow: 0px 1px 10px rgba(130, 130, 130, 0.2);
+  background-color: #90ce00;
+  width: 100%;
+}
+
+.menu-subitem li:first-child {
+  background-color: white;
+  height: 4px;
+}
+.menu-subitem:hover {
+  transition-duration: 0.25s;
+  transition-property: all;
+  background-color: #64ee98;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=proyectosTerminados.css.map */

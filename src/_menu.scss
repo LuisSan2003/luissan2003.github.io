@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+    margin: 12px;
+    position: relative;
+}
+.menu-item {
+    list-style: none;
+    text-align: center;
+    flex: 1;
+    line-height: 3rem;
+    transition: flex 0.5s;
+    position: relative;
+    transform-origin: center left;
+    box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color: $terciary-color;
+    ul {
+        display: none;
+        list-style: none;
+    };
+    &:hover {
+        flex: 1.25;
+        background-color: $fourth-color;
+        ul {
+            display: block;
+            position: absolute;
+            text-align: center;
+            transition: opacity 1s, display 1s;
+            background-color: rgba(141, 141, 141, 0.329);
+            width: 100%;
+        }
+    }
+}
+.menu-subitem {
+    li:first-child {
+        background-color: $primary-color;
+        height: 4px;
+    };
+    &:hover {
+        transition-duration: 0.25s;
+        transition-property: all;
+        li:hover:not(:nth-child(1)) {
+            background-color: #1d5a7a;
+            a {
+                text-decoration: none;
+                color: black;
+
+            }
+        }
+    }
+}
