@@ -1,0 +1,211 @@
+.menu {
+  display: flex;
+  margin: 12px;
+  position: relative;
+}
+
+.menu-item {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  line-height: 3rem;
+  transition: flex 0.5s;
+  position: relative;
+  transform-origin: center left;
+  box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+.menu-item ul {
+  display: none;
+  list-style: none;
+}
+.menu-item:hover {
+  flex: 1.25;
+  background-color: #003d5a;
+}
+.menu-item:hover ul {
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s, display 1s;
+  background-color: rgba(141, 141, 141, 0.329);
+  width: 100%;
+}
+
+.menu-subitem li:first-child {
+  background-color: #262b30;
+  height: 4px;
+}
+.menu-subitem li a {
+  text-decoration: none;
+  color: black;
+}
+.menu-subitem:hover {
+  transition-duration: 0.25s;
+  transition-property: all;
+  background-color: #003d5a;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) {
+  background-color: #1d5a7a;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262b30;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.menu {
+  display: flex;
+  margin: 12px;
+  position: relative;
+}
+
+.menu-item {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  line-height: 3rem;
+  transition: flex 0.5s;
+  position: relative;
+  transform-origin: center left;
+  box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+.menu-item ul {
+  display: none;
+  list-style: none;
+}
+.menu-item:hover {
+  flex: 1.25;
+  background-color: #003d5a;
+}
+.menu-item:hover ul {
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s, display 1s;
+  background-color: rgba(141, 141, 141, 0.329);
+  width: 100%;
+}
+
+.menu-subitem li:first-child {
+  background-color: #262b30;
+  height: 4px;
+}
+.menu-subitem li a {
+  text-decoration: none;
+  color: black;
+}
+.menu-subitem:hover {
+  transition-duration: 0.25s;
+  transition-property: all;
+  background-color: #003d5a;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) {
+  background-color: #1d5a7a;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+  margin: 72px 132px;
+  padding: 72px;
+  text-align: justify;
+  align-items: center;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+.presentation h1 {
+  text-align: center;
+}
+.presentation p {
+  justify-content: center;
+  margin: 46px;
+}
+
+.presentation_img {
+  width: 235px;
+  align-items: center;
+}
+
+.proyectos {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(141, 141, 141, 0.2);
+  color: black;
+  font-size: large;
+  margin: 12px;
+  box-shadow: 8px 8px rgba(7, 4, 4, 0.2);
+}
+
+.proyectos_item {
+  margin: 36px 12px 72px 12px;
+  padding-top: 12px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(141, 141, 141, 0.2);
+}
+
+.item-proyectos a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #003d5a;
+  height: 100px;
+  margin-left: 28px;
+  margin-right: 28px;
+  border-radius: 10px;
+}
+.item-proyectos:hover a {
+  background-color: rgba(138, 24, 58, 0.4);
+}
+.item-proyectos img {
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 4px;
+  border-radius: 25px;
+  padding: 4px;
+  width: 270px;
+  height: 240px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=principal.css.map */

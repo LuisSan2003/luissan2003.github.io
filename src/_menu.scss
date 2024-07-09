@@ -1,3 +1,5 @@
+@import '_variables';
+
 .menu {
     display: flex;
     margin: 12px;
@@ -14,6 +16,10 @@
     box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     background-color: $terciary-color;
+    a {
+        text-decoration: none;
+        color: black;
+    };
     ul {
         display: none;
         list-style: none;
@@ -36,9 +42,16 @@
         background-color: $primary-color;
         height: 4px;
     };
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    };
     &:hover {
         transition-duration: 0.25s;
         transition-property: all;
+        background-color: $fourth-color;
         li:hover:not(:nth-child(1)) {
             background-color: #1d5a7a;
             a {
@@ -48,4 +61,9 @@
             }
         }
     }
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
