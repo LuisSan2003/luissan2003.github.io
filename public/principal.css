@@ -14,7 +14,7 @@
   transform-origin: center left;
   box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: rgba(16, 50, 51, 0.65);
 }
 .menu-item a {
   text-decoration: none;
@@ -26,7 +26,7 @@
 }
 .menu-item:hover {
   flex: 1.25;
-  background-color: #003d5a;
+  background-color: rgba(16, 50, 51, 0.65);
 }
 .menu-item:hover ul {
   display: block;
@@ -38,7 +38,7 @@
 }
 
 .menu-subitem li:first-child {
-  background-color: #262b30;
+  background-color: none;
   height: 4px;
 }
 .menu-subitem li a {
@@ -48,7 +48,7 @@
 .menu-subitem:hover {
   transition-duration: 0.25s;
   transition-property: all;
-  background-color: #003d5a;
+  background-color: #103233;
 }
 .menu-subitem:hover li:hover:not(:nth-child(1)) {
   background-color: #1d5a7a;
@@ -65,106 +65,57 @@
 }
 
 body {
-  background-color: #262b30;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
 }
 
-.menu {
-  display: flex;
-  margin: 12px;
-  position: relative;
-}
-
-.menu-item {
-  list-style: none;
-  text-align: center;
-  flex: 1;
-  line-height: 3rem;
-  transition: flex 0.5s;
-  position: relative;
-  transform-origin: center left;
-  box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  background-color: rgba(141, 141, 141, 0.2);
-}
-.menu-item a {
-  text-decoration: none;
-  color: black;
-}
-.menu-item ul {
-  display: none;
-  list-style: none;
-}
-.menu-item:hover {
-  flex: 1.25;
-  background-color: #003d5a;
-}
-.menu-item:hover ul {
-  display: block;
-  position: absolute;
-  text-align: center;
-  transition: opacity 1s, display 1s;
-  background-color: rgba(141, 141, 141, 0.329);
-  width: 100%;
-}
-
-.menu-subitem li:first-child {
-  background-color: #262b30;
-  height: 4px;
-}
-.menu-subitem li a {
-  text-decoration: none;
-  color: black;
-}
-.menu-subitem:hover {
-  transition-duration: 0.25s;
-  transition-property: all;
-  background-color: #003d5a;
-}
-.menu-subitem:hover li:hover:not(:nth-child(1)) {
-  background-color: #1d5a7a;
-}
-.menu-subitem:hover li:hover:not(:nth-child(1)) a {
-  text-decoration: none;
-  color: black;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+body {
+  background-image: url(../public/fondoPrincipal.jpg);
+  background-size: cover;
 }
 
 .presentation {
   display: flex;
   flex-direction: row;
   margin: 72px 132px;
-  padding: 72px;
+  padding: 72px 60px 72px 60px;
   text-align: justify;
   align-items: center;
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: rgba(28, 85, 87, 0.4);
+  box-shadow: 8px 8px rgba(7, 4, 4, 0.2);
 }
 .presentation h1 {
   text-align: center;
 }
 .presentation p {
   justify-content: center;
-  margin: 46px;
+  margin: 48px 36px;
+}
+
+#presentation-cajita {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: rgba(28, 85, 87, 0.4);
+  align-items: center;
+  text-align: justify;
+  margin-right: 4px;
 }
 
 .presentation_img {
   width: 235px;
   align-items: center;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .proyectos {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: rgba(16, 50, 51, 0.65);
   color: black;
   font-size: large;
   margin: 12px;
@@ -174,11 +125,12 @@ body {
 .proyectos_item {
   margin: 36px 12px 72px 12px;
   padding-top: 12px;
+  padding-bottom: 12px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
   font-weight: bold;
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: none;
 }
 
 .item-proyectos a {
@@ -189,14 +141,14 @@ body {
   justify-content: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: #003d5a;
+  background-color: rgba(16, 50, 51, 0.4);
   height: 100px;
   margin-left: 28px;
   margin-right: 28px;
   border-radius: 10px;
 }
 .item-proyectos:hover a {
-  background-color: rgba(138, 24, 58, 0.4);
+  background-color: rgba(179, 121, 56, 0.603);
 }
 .item-proyectos img {
   border-color: rgba(255, 255, 255, 0);

@@ -1,32 +1,46 @@
 @import 'menu';
 @import 'body';
-@import 'menu';
-
+body {
+    background-image: url(../public/fondoPrincipal.jpg);
+    background-size: cover;
+}
 .presentation {
     display: flex;
     flex-direction: row;
     margin: 72px 132px;
-    padding: 72px;
+    padding: 72px 60px 72px 60px;
     text-align: justify;
     align-items: center;
-    background-color: rgba(141, 141, 141, 0.2);
+    background-color: $terciary-color-rgb;
+    box-shadow: 8px 8px rgba(7, 4, 4, 0.2);
     h1 {
         text-align: center;
     };
     p {
         justify-content: center;
-        margin: 46px;
+        margin: 48px 36px;
     }
+}
+#presentation-cajita {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    background-color: $terciary-color-rgb; 
+    align-items: center;
+    text-align: justify;
+    margin-right: 4px;
 }
 .presentation_img {
     width: 235px;
     align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 .proyectos {
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: rgba(141, 141, 141, 0.2);
+    background-color: rgba(16, 50, 51, 0.65); // $fourth-color-rgb
     color: black;
     font-size: large;
     margin: 12px;
@@ -35,11 +49,12 @@
 .proyectos_item {
     margin: 36px 12px 72px 12px;
     padding-top: 12px;
+    padding-bottom: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     text-align: center;
     font-weight: bold;
-    background-color: rgba(141, 141, 141, 0.2);
+    background-color: none; //$terciary-color-rgb;
 }
 .item-proyectos {
     a {
@@ -50,7 +65,7 @@
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: #003d5a;
+    background-color: $fourth-color-rgb;
     height: 100px;
     margin-left: 28px;
     margin-right: 28px;
@@ -58,7 +73,7 @@
     };
     &:hover {
         a {
-            background-color: rgba(138, 24, 58, 0.4);
+            background-color: rgba(179, 121, 56, 0.603);
         }
     };
     img {

@@ -15,7 +15,7 @@
     transform-origin: center left;
     box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    background-color: $terciary-color;
+    background-color: rgba(16, 50, 51, 0.65); // $terciary-color-rgb;
     a {
         text-decoration: none;
         color: black;
@@ -26,7 +26,7 @@
     };
     &:hover {
         flex: 1.25;
-        background-color: $fourth-color;
+        background-color: rgba(16, 50, 51, 0.65); //$fourth-color-rgb;
         ul {
             display: block;
             position: absolute;
@@ -39,7 +39,7 @@
 }
 .menu-subitem {
     li:first-child {
-        background-color: $primary-color;
+        background-color: none;
         height: 4px;
     };
     li {
