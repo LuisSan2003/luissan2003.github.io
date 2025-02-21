@@ -1,8 +1,12 @@
 @import 'menu';
 @import 'body';
 
+body {
+    background-image: url(../public/fondoProyectosEnCurso.jpg);
+    background-size: cover;
+}
 .container {
-    background-color: $terciary-color;
+    background-color: $terciary-color-rgb;
     margin: 100px auto;
     width: 1080px;
     padding: 50px;

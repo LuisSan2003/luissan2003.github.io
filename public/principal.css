@@ -51,7 +51,7 @@
   background-color: #103233;
 }
 .menu-subitem:hover li:hover:not(:nth-child(1)) {
-  background-color: #1d5a7a;
+  background-color: rgba(29, 122, 83, 0.5882352941);
 }
 .menu-subitem:hover li:hover:not(:nth-child(1)) a {
   text-decoration: none;

@@ -14,7 +14,7 @@
   transform-origin: center left;
   box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: rgba(16, 50, 51, 0.65);
 }
 .menu-item a {
   text-decoration: none;
@@ -26,7 +26,7 @@
 }
 .menu-item:hover {
   flex: 1.25;
-  background-color: #003d5a;
+  background-color: rgba(16, 50, 51, 0.65);
 }
 .menu-item:hover ul {
   display: block;
@@ -38,7 +38,7 @@
 }
 
 .menu-subitem li:first-child {
-  background-color: #262b30;
+  background-color: none;
   height: 4px;
 }
 .menu-subitem li a {
@@ -48,10 +48,10 @@
 .menu-subitem:hover {
   transition-duration: 0.25s;
   transition-property: all;
-  background-color: #003d5a;
+  background-color: #103233;
 }
 .menu-subitem:hover li:hover:not(:nth-child(1)) {
-  background-color: #1d5a7a;
+  background-color: rgba(29, 122, 83, 0.5882352941);
 }
 .menu-subitem:hover li:hover:not(:nth-child(1)) a {
   text-decoration: none;
@@ -65,15 +65,19 @@
 }
 
 body {
-  background-color: #262b30;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
 }
 
+body {
+  background-image: url(../public/fondoProyectosEnCurso.jpg);
+  background-size: cover;
+}
+
 .container {
-  background-color: rgba(141, 141, 141, 0.2);
+  background-color: rgba(28, 85, 87, 0.4);
   margin: 100px auto;
   width: 1080px;
   padding: 50px;
