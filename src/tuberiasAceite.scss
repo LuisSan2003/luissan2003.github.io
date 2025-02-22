@@ -1,0 +1,32 @@
+@import 'menu';
+@import 'body';
+@import 'variables';
+
+body {
+    background-image: url(../public/fondoTuberiasAceite.jpg);
+    background-size: cover;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 72px 132px;
+    padding: 72px 60px 72px 60px;
+    text-align: justify;
+    align-items: center;
+    background-color: $terciary-color-rgb;
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+}
+.content a {
+    color: black;
+    text-decoration: none;
+}
+.content a:hover {
+    text-decoration: underline;
+    color: black;
+}
+.plano {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+}

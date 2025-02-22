@@ -1,0 +1,106 @@
+.menu {
+  display: flex;
+  margin: 12px;
+  position: relative;
+}
+
+.menu-item {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  line-height: 3rem;
+  transition: flex 0.5s;
+  position: relative;
+  transform-origin: center left;
+  box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: rgba(16, 50, 51, 0.65);
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+.menu-item ul {
+  display: none;
+  list-style: none;
+}
+.menu-item:hover {
+  flex: 1.25;
+  background-color: rgba(16, 50, 51, 0.65);
+}
+.menu-item:hover ul {
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s, display 1s;
+  background-color: rgba(141, 141, 141, 0.329);
+  width: 100%;
+}
+
+.menu-subitem li:first-child {
+  background-color: none;
+  height: 4px;
+}
+.menu-subitem li a {
+  text-decoration: none;
+  color: black;
+}
+.menu-subitem:hover {
+  transition-duration: 0.25s;
+  transition-property: all;
+  background-color: #103233;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) {
+  background-color: rgba(29, 122, 83, 0.5882352941);
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  background-image: url(../public/fondoTuberiasAceite.jpg);
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 72px 132px;
+  padding: 72px 60px 72px 60px;
+  text-align: justify;
+  align-items: center;
+  background-color: rgba(28, 85, 87, 0.4);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
+
+.content a {
+  color: black;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.plano {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/*# sourceMappingURL=tuberiasAceite.css.map */
