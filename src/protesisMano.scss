@@ -1,0 +1,32 @@
+@import 'menu';
+@import 'body';
+@import 'variables';
+
+body {
+    background-image: url(../public/fondoProtesisMano.jpg);
+    background-size: cover;
+};
+
+.Mano {
+    margin-top: 24px;
+    margin-bottom: 24px;
+};
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 72px 132px;
+    padding: 72px 60px 72px 60px;
+    text-align: justify;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: $box-shadow;
+    border-radius: 25px;
+};
+.content a {
+    color: black;
+    text-decoration: none;
+};
+.content a:hover {
+    text-decoration: underline;
+    color: black;
+};
