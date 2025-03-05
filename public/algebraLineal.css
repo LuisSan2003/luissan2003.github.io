@@ -1,0 +1,111 @@
+.menu {
+  display: flex;
+  margin: 12px;
+  position: relative;
+  font-weight: bold;
+}
+
+.menu-item {
+  list-style: none;
+  text-align: center;
+  flex: 1;
+  line-height: 3rem;
+  transition: flex 0.5s;
+  position: relative;
+  transform-origin: center left;
+  box-shadow: 0.5px 5px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background-color: rgba(16, 50, 51, 0.65);
+}
+.menu-item a {
+  text-decoration: none;
+  color: black;
+}
+.menu-item ul {
+  display: none;
+  list-style: none;
+}
+.menu-item:hover {
+  flex: 1.25;
+  background-color: rgba(16, 50, 51, 0.65);
+}
+.menu-item:hover ul {
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: opacity 1s, display 1s;
+  background-color: rgba(141, 141, 141, 0.329);
+  width: 100%;
+}
+
+.menu-subitem li:first-child {
+  background-color: none;
+  height: 4px;
+}
+.menu-subitem li a {
+  text-decoration: none;
+  color: black;
+}
+.menu-subitem:hover {
+  transition-duration: 0.25s;
+  transition-property: all;
+  background-color: #103233;
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) {
+  background-color: rgba(29, 122, 83, 0.5882352941);
+}
+.menu-subitem:hover li:hover:not(:nth-child(1)) a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  background-color: #04003f;
+}
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  border-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
+  margin-top: 72px;
+  margin-bottom: 24px;
+  color: white;
+  font-weight: 700;
+}
+
+h4 {
+  color: white;
+  font-weight: 600;
+  margin: 8px 24px 20px 24px;
+  font-size: 16px;
+}
+
+.content {
+  margin: 8px 0px 36px 0px;
+  text-align: justify;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 8px 8px rgba(7, 4, 4, 0.2);
+  padding: 120px 120px 120px 120px;
+  line-height: 2rem;
+}
+
+.menu-item {
+  background-color: rgba(0, 250, 255, 0.5);
+}
+
+/*# sourceMappingURL=algebraLineal.css.map */

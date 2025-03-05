@@ -6,14 +6,7 @@
         <link rel="stylesheet" href="principal.css">
     </head>
     <body>
-        <header>
-            <ul class="menu">
-                <li class="menu-item"><a href="principal.html">Santamaria</a></li>
-                <li class="menu-item">Curriculum Vitae</li>
-                <li class="menu-item">Cursos<ul class="menu-subitem"><li></li><li><a href="https://youtu.be/ZQI2AyUoPpU?si=NCQXt2CMa4itakpZ" target="_blank">Taller Flux.AI: Introducción a las placas PCB</a></li></ul></li>
-                <li class="menu-item">Proyectos<ul class="menu-subitem"><li></li><li><a href="proyectosTerminados.html" target="_blank">Terminados</a></li><li><a href="proyectosEnCurso.html" target="_blank">En curso</a></li></ul></li>
-                <li class="menu-item">Contacto</li>
-            </ul>
+        <header id="header">
         </header>
         <section class="bodycito">
             <section class="presentation">
@@ -42,5 +35,11 @@
                     </div>
                 </div>
         </section>
+        <script>
+            console.log("aa");
+            fetch("headerMenu.html")
+            .then(response => response.text())
+            .then(data=> document.getElementById("header").innerHTML = data);
+        </script>
     </body>
 </html>
