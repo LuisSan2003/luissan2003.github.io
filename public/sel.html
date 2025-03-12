@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sistemas de Ecuaciones Lineales</title>
+        <link rel="stylesheet" href="sel.css">
+    </head>
+    <body>
+        <header>
+            <ul class="menu">
+                <li class="menu-item"><a href="principal.html">Santamaria</a></li>
+                <li class="menu-item"><a href="../cvLatex/Curriculum Vitae.pdf">Curriculum Vitae</a></li>
+                <li class="menu-item">Cursos<ul class="menu-subitem"><li></li><li><a href="https://youtu.be/ZQI2AyUoPpU?si=NCQXt2CMa4itakpZ" target="_blank">Taller Flux.AI: Introducción a las placas PCB</a></li><li><a href="algebraLineal.html" target="_blank">Álgebra Lineal</a></li></ul></li>
+                <li class="menu-item">Proyectos<ul class="menu-subitem"><li></li><li><a href="proyectosTerminados.html" target="_blank">Terminados</a></li><li><a href="proyectosEnCurso.html" target="_blank">En curso</a></li></ul></li>
+                <li class="menu-item">Contacto</li>
+            </ul>
+            <h1 class="tituloPrincipal">Sistemas de Ecuaciones Lineales</h1>
+        </header>
+        <div class="content">
+            <h2>Ecuaciones Lineales</h2>
+            <p>Un sistema de ecuaciones lineales es un conjunto formado por dos o más ecuaciones, con dos o más incógnitas.
+                Todas ellas tienen una solución en común.<br>
+                <div class="definition">
+                    <strong>Definición:</strong><br>
+                    <em>Una ecuación lineal de n variables \( x_1, x_2, ..., x_n\) se define como una igualdad que puede expresarse
+                        de la forma:
+                        <div class="equation_alone">\( a_1 x_1 + a_2 x_2 + a_3 x_3 + ... + a_n x_n = b\),</div>
+                        donde \( a_1 , a_2 , ... , a_n\) y  b son escalares dados.
+                    </em>
+                </div>
+                Parafraseando esta primera definición, una ecuación lineal es una igualdad, la cual de un lado del paréntesis tiene las incógnitas a despejar mientras que el otro lado
+                de la ecuación tiene normalmente los términos independientes.
+                En esta definición, tenemos que:
+                <ol>
+                    <li><strong><h4>\(a_1 , a_2 , ... , a_n\) \in \mathbb{K} se les llama Coeficientes de la ecuación.</h4></strong>Los coeficientes son los números que acompañan a las incógnitas.
+                        En este caso no vemos números, ¿Verdad? Vemos la letra <em>a</em>. En Álgebra Lineal se suelen usar las letras griegas o latinas minúsculas para
+                        representar coeficientes o números.<br>
+                        No se usan números como tal porque estos representarían casos particulares, y en álgebra no queremos trabajar con casos particulares, sino con casos
+                        generales donde podamos encontrar una solución a un problema en todos los casos, no en los particulares.<br>
+                        Por ejemplo, nosotros usando letras griegas como \(\alpha\) podemos representar cualquier número, ya sea mayor, igual o menor que cero. Mientras que
+                        únicamente escribiendo un número como <em>2, 9, 7</em> estaremos trabajando en los casos particulares de esos tres números, ignorando la infinidad de
+                        números existentes restantes.<br>
+                        ¿Por qué esto? Aplicado en la vida real, si se trabaja con casos particulares, se está ignorando posibilidades de casos. Habrá problemas que se resuelvan
+                        con un número en específico, por ejemplo, 437, pero dicho problema no se solucionará con el número 100. Es decir, hay problemas con condiciones los cuales
+                        veremos más adelante.<br>
+                        Por ahora, lo importante es recordar "Las letras griegas minúsculas y latinas minúsculas se usan para representar coeficientes."
+                    </li>
+                    <li><strong><h4>\(b \in \mathbb{K}\) se denomina <em>término independiente</em> o constante de la ecuación.</h4></strong></li>
+                        Es el término independiente, normalmente escalar (no vector) que se encuentra al otro lado de la ecuación
+                    <li><strong><h4>La ecuación es <strong>homogénea</strong> si <em>b = 0</em>, caso contrario se dice que es <strong>no homogénea</strong>.</h4></strong></li>
+                        Es decir, si la ecuación es igualada a 0 entonces es homogénea. Si en el sistema de ecuaciones, todas las ecuaciones son igualadas a 0, entonces el SEL es homogéneo.
+                    <li><strong><h4>\(x_1 , x_2 , ... , x_n\) también se les llama <strong>incógnitas</strong>.</h4></strong></li>
+                        En Álgebra Lineal, se tomará la letra <em>x</em> como incógnita. También se puede tomar (y se tomará) las letras latinas descritas anteriormente como incógnitas.
+                        En este blog se procurará usar únicamente letras griegas para coeficientes y letras latinas para incógnitas.
+                </ol>
+                <div class="definition">
+                    <strong>Definición:</strong><br>
+                    <em>Un sistema de m ecuaciones lineales con n variables \(x_1 , x_2 , ... , x_n\) o simplemente sistema lineal, es un conjunto
+                        de m ecuaciones lineales que involucran las mismas variables y que se consideran simultáneamente.
+                    </em>
+                </div>
+                Para respaldar mejor la información, a continuación te dejo el vídeo del canal Matefácil. Es un canal muy recomendado para Álgebra Lineal,
+                Ecuaciones Diferenciales y contenido académico:<br>
+                <div id="video-SEL"></div>
+            </p>
+        </div>
+        <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script src="../src/sel.js"></script>
+    </body>
+</html>
